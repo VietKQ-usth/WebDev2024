@@ -1,18 +1,30 @@
+// Tải các biến môi trường từ file .env
+require('dotenv').config();
+
 const express = require('express');
 const axios = require('axios');
 const app = express();
 
+// Import auth routes từ auth.js
+const authRoutes = require('./routes/auth');
+
 // Cấu hình port cho server
 const PORT = process.env.PORT || 3000;
 
-// Lấy client id từ MyAnimeList
-const client_id = '36909158cc6f772d87f54faa84596947';
+// Middleware để xử lý JSON
+app.use(express.json());
+
+// Sử dụng auth routes
+app.use('/api/auth', authRoutes);
+
+// Lấy client id từ MyAnimeList từ biến môi trường
+const client_id = process.env.MAL_CLIENT_ID;
 
 // Hàm tổng quát để lấy dữ liệu từ MyAnimeList API
 async function get_anime_ranking(ranking_type) {
   try {
     const response = await axios.get(
-      `https://api.myanimelist.net/v2/anime/ranking?ranking_type=${ranking_type}&limit=10&fields=rank,mean,main_picture,num_episodes,start_date,num_list_users`,
+      `https://api.myanimelist.net/v2/anime/ranking?ranking_type=${ranking_type}&limit=10&fields=mean,main_picture,num_episodes,start_date,num_list_users`,
       { headers: { 'X-MAL-CLIENT-ID': client_id } }
     );
     return response.data.data;
