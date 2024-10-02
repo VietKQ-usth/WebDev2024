@@ -66,4 +66,13 @@ movieLists.forEach((movieList, i) => {
             }
         });
     });
+
+    const toggle = document.querySelector('.toggle');
+    const toggleBall = document.querySelector('.toggle-ball');
+
+    toggle.addEventListener('click', () => {
+    toggle.classList.toggle('active');
+    toggleBall.classList.toggle('active');
+});
+
 });

@@ -45,9 +45,17 @@ body{
     list-style: none;
 }
 
-.menu-list-item{
+.menu-list-item {
     margin-right: 30px;
+    padding: 10px 20px; /* Thêm padding để mục lớn hơn và dễ bấm hơn */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng mượt khi hover */
 }
+
+.menu-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.671); /* Làm nổi bật khi hover */
+    border-radius: 5px; /* Tạo hiệu ứng bo tròn khi hover */        
+}
+
 
 .menu-list-item.active{
     font-weight: bold;
@@ -71,7 +79,7 @@ body{
     object-fit: cover;
 }
 
-.toggle{
+.toggle {
     width: 40px;
     height: 20px;
     background-color: white;
@@ -80,20 +88,33 @@ body{
     align-items: center;
     justify-content: space-around;
     position: relative;
+    cursor: pointer; /* Đảm bảo con trỏ chuột thay đổi khi di chuột qua toggle */
+    transition: background-color 0.3s ease;
 }
 
-.toggle-icon{
-    color:goldenrod;
+.toggle-icon {
+    color: goldenrod;
 }
 
-.toggle-ball{
+.toggle-ball {
     width: 18px;
     height: 18px;
     background-color: black;
     position: absolute;
-    right: 1px;;
+    right: 1px;
     border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
+}
+
 
 .sidebar{
     width: 50px;
