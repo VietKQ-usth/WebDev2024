@@ -13,4 +13,4 @@ Student Info
 * Name: Ha Dinh Tuan
 * ID: BA12-183
 * Group ID: 09
-* Project Name: Video streaming platform
+* Project Name: Video Streaming Platform
