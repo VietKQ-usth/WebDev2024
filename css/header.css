@@ -12,7 +12,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    height: 50px;
+    padding: 10px 200px;
     background: white;
     display: flex;
     justify-content: space-between;
@@ -86,4 +87,6 @@ header .navigation a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+
 
