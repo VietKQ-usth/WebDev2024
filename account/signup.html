@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Login</title>
+    <title>Sign Up</title>
     <link rel="icon" type="image/x-icon" href="/src/images/favicon.ico" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signup.css">
     <link rel="stylesheet" href="../css/footer.css">
     
 </head>
@@ -34,14 +34,24 @@
 
     <main>
         <div class="login-wapper">
+            <div class="image-container">
+                
+            </div>
             <div class="form-box login">
-                <h2>Login</h2>
+                <h2>Sign Up</h2>
                 <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
                     <div class="input-box">
                         <span class="icon">
                             <ion-icon name="mail-outline"></ion-icon>
                         </span>
-                        <input type="email" required>
+                        <input type="text" required>
                         <label>Email</label>
                     </div>
                     <div class="input-box">
@@ -51,16 +61,27 @@
                         <input type="password" required>
                         <label>Password</label>
                     </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label>Re-Type Password</label>
+                    </div>
+                    <button type="submit" class="btnSubmit">Sign Up</button>
+                
                     <div class="remember-forgot">
                         <label> 
-                            <input type="checkbox"> Remember Me
+                            By signing up you agree to our
+                            <a href="#">Terms of Service</a> and
+                            <a href="#">Privacy Policy</a>
                         </label>
-                        <a href="#">Forgot Password?</a>
+                        
                     </div>
-                    <button type="submit" class="btnSubmit">Login</button>
+                    
                     <div class="login-register">
                         <p>
-                            Don't have an account? <a href="signup.html" class="register-link">Register.</a>
+                            Already have an account? <a href="../account/login.html" class="register-link">Log in</a>
                         </p>
                     </div>
                 </form>
