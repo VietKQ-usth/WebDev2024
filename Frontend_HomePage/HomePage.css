@@ -22,7 +22,6 @@ body{
     height: 100%;
     color: white;
     font-family: "Sen", sans-serif;
-
 }
 
 .logo-container a{
@@ -47,15 +46,22 @@ body{
 
 .menu-list-item {
     margin-right: 30px;
-    padding: 10px 20px; /* Thêm padding để mục lớn hơn và dễ bấm hơn */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Thêm hiệu ứng mượt khi hover */
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
+/* Hover effect cho dark mode */
 .menu-list-item:hover {
-    background-color: rgba(255, 255, 255, 0.671); /* Làm nổi bật khi hover */
-    border-radius: 5px; /* Tạo hiệu ứng bo tròn khi hover */        
+    background-color: rgba(255, 0, 0, 0.877); 
+    border-radius: 5px; 
 }
 
+/* Hover effect cho light mode */
+.light-mode .menu-list-item:hover {
+    background-color: rgba(198, 6, 6, 0.71); /* Màu nền khi hover trong light mode */
+    color: black; /* Màu chữ khi hover trong light mode */
+    border-radius: 5px;
+}
 
 .menu-list-item.active{
     font-weight: bold;
@@ -115,7 +121,6 @@ body{
     transform: translateX(-20px);
 }
 
-
 .sidebar{
     width: 50px;
     height: 100%;
@@ -126,7 +131,10 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
-    
+}
+
+.sidebar.active{
+    background-color: white;
 }
 
 .left-menu-icon{
@@ -144,8 +152,34 @@ body{
 
 .content-container{
     margin-left: 50px;
-
 }
+
+.container.active{
+    background-color: white;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+/* Light mode adjustments */
+.light-mode .navbar {
+    background-color: white;
+}
+
+.light-mode .navbar-container {
+    color: black;
+}
+
+.light-mode .toggle-ball {
+    background-color: black;
+}
+
 .featured-content{
     height: 50vh;
     background-color: tomato;
@@ -202,6 +236,10 @@ body{
     opacity: 0.5;
 }
 
+.movie-list-title.active{
+    color: black;
+}
+
 .movie-list-item:hover .movie-list-item-title,
 .movie-list-item:hover .movie-list-item-desc,
 .movie-list-item:hover .movie-list-item-button{
@@ -214,7 +252,6 @@ body{
     width: 400px;
     object-fit: cover;
     border-radius: 20px;
-
 }
 
 .movie-list-item-title {
@@ -314,27 +351,3 @@ body{
     opacity: 1; /* Luôn hiển thị khi đã bookmark */
     color: red; 
 }
-
-
-.container.active{
-    background-color: white;
-}
-
-.movie-list-title.active{
-    color: black;
-}
-
-
-.navbar-container.active{
-    background-color: white;
-    color: black;
-}
-
-.sidebar.active{
-    background-color: white;
-}
-
-.left-menu-icon.active{
-    color: black;
-}
-
