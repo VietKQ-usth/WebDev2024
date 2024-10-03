@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Vũ Trọng Bách
-* ID: 22BI13056
-* Group ID: 09
-* Project Name: Video streaming platform
+* Name: *YourNameHere*
+* ID: *YourIdHere*
+* Group ID: *Your Group ID here*
+* Project Name: *Your Project Name here*
