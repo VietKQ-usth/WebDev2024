@@ -316,6 +316,25 @@ body{
 }
 
 
-.container{
-    /* background-color: white; */
+.container.active{
+    background-color: white;
 }
+
+.movie-list-title.active{
+    color: black;
+}
+
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+

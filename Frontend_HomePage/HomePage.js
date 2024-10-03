@@ -1,7 +1,8 @@
 const arrowsLeft = document.querySelectorAll(".arrow-left");
 const arrowsRight = document.querySelectorAll(".arrow-right");
 const movieLists = document.querySelectorAll(".movie-list");
-
+const toggle = document.querySelector('.toggle');
+const toggleBall = document.querySelectorAll('.container,.movie-list-title,.sidebar,.navbar-container,.left-menu-icon,.toggle-ball');
 movieLists.forEach((movieList, i) => {
     const items = movieList.querySelectorAll(".movie-list-item");
     const itemWidth = movieList.querySelector(".movie-list-item").offsetWidth + 10;
@@ -67,12 +68,15 @@ movieLists.forEach((movieList, i) => {
         });
     });
 
-    const toggle = document.querySelector('.toggle');
-    const toggleBall = document.querySelector('.toggle-ball');
+    
 
-    toggle.addEventListener('click', () => {
+    toggle.addEventListener('click',() => {
+    toggleBall.forEach(color_mode=>{
+        color_mode.classList.toggle('active')
+    });
+
     toggle.classList.toggle('active');
-    toggleBall.classList.toggle('active');
+
 });
 
 });
