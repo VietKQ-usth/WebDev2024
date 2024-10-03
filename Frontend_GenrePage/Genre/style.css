@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo tất cả phần tử sử dụng box-sizing */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #151515; /* Màu nền tổng thể cho body */
+    color: white; /* Màu chữ mặc định */
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed; /* Thanh điều hướng luôn cố định */
+    top: 0; /* Gắn thanh điều hướng ở đầu trang */
+    z-index: 999; /* Đảm bảo thanh điều hướng nằm trên các phần tử khác */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+.logo-container a {
+    flex: 1;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: "Sen", sans-serif;
+    font-size: 30px;
+    color: red;
+}
+
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item {
+    margin-right: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-list-item:hover {
+    background-color: rgba(255, 0, 0, 0.877);
+    border-radius: 5px;
+}
+
+.menu-list-item.active {
+    font-weight: bold;
+}
+
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-icon {
+    color: goldenrod;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px); /* Chiều cao tối thiểu cho container */
+    width: 100%;
+    overflow-y: auto; /*thanh cuộn*/
+}
+
+.content-container {
+    margin-left: 50px; /* Đảm bảo nội dung không bị che bởi sidebar */
+    padding-top: 70px; /* Khoảng cách trên cho nội dung tránh navbar */
+}
+
+/* Định dạng cho dropdown menu */
+.dropdown-menu {
+    width: 150px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu-list-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    font-size: 16px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Style cho nội dung chính */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin: 70px 0 20px; /* Đảm bảo có khoảng cách với navbar */
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1); /* Nền nhẹ nhàng cho breadcrumb */
+    padding: 10px; /* Padding để tạo không gian bên trong */
+    border-radius: 5px; /* Bo tròn các góc */
+    color: white; /* Đặt màu chữ */
+}
+
+.breadcrumb a {
+    color: white; /* Màu chữ cho liên kết */
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.breadcrumb span {
+    color: lightgray; /* Màu cho phần không phải liên kết */
+}
+
+/* Style cho danh sách anime */
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 cột */
+    grid-gap: 20px; /* Khoảng cách giữa các mục */
+    justify-items: center; /* Canh giữa các mục */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.anime-item {
+    text-align: center;
+}
+
+.anime-item img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Căn giữa cho các liên kết phân trang */
+    margin-top: 20px;
+}
+
+.page-link {
+    margin: 0 5px; /* Khoảng cách giữa các liên kết phân trang */
+    padding: 10px 15px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.page-link:hover {
+    background-color: #C11119; /* Màu nền khi hover */
+}
+
+
+.dropdown-item a {
+    color: white; /* Đặt màu chữ cho liên kết trong dropdown */
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+}
+
+.dropdown-item a:visited {
+    color: white; /* Đặt màu chữ cho liên kết đã truy cập */
+}
+
+.dropdown-item a:hover {
+    color: lightgray; /* Màu chữ khi hover */
+    text-decoration: none; /* Không gạch chân khi hover */
+}
+
+/* Thay đổi màu cho liên kết đang hoạt động (active) */
+.menu-list-item.active .dropdown-item a {
+    color: lightgray; /* Màu chữ cho thể loại đang hoạt động */
+}
