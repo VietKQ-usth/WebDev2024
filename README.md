@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: *Nguyễn Quốc Huy*
+* ID: *BA12-089*
+* Group ID: *6*
+* Project Name: *15. Content Management System (CMS)*
