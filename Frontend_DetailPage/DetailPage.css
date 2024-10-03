@@ -35,8 +35,9 @@ body{
     color: red
 }
 
-.menu-container{
+.menu-container {
     flex: 6;
+    text-decoration: none;
 }
 
 .menu-list{

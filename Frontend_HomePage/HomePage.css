@@ -38,7 +38,7 @@ body{
 .menu-container a{
     flex: 6;
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .menu-list{
@@ -321,6 +321,10 @@ body{
     transition: 100ms all ease-in-out;
 }
 
+.movie-list-item-button a{
+    color: white;
+    text-decoration: none;
+}
 
 .arrow-left, .arrow-right {
     font-size: 90px;

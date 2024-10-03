@@ -66,39 +66,39 @@ movieLists.forEach((movieList, i) => {
         }
     });
 
-    // Xử lý bookmark cho từng item
-    items.forEach((item) => {
-        const bookmarkIcon = item.querySelector('.bookmark-icon'); // Lấy biểu tượng bookmark
+    // // Xử lý bookmark cho từng item
+    // items.forEach((item) => {
+    //     const bookmarkIcon = item.querySelector('.bookmark-icon'); // Lấy biểu tượng bookmark
 
-        // Ẩn biểu tượng bookmark ban đầu
-        bookmarkIcon.style.opacity = '0';
+    //     // Ẩn biểu tượng bookmark ban đầu
+    //     bookmarkIcon.style.opacity = '0';
 
-        // Hiển thị bookmark khi hover vào item
-        item.addEventListener('mouseenter', () => {
-            if (!item.classList.contains('bookmarked')) {
-                bookmarkIcon.style.opacity = '0.5'; // Hiển thị nhẹ khi chưa được bookmark
-            }
-        });
+    //     // Hiển thị bookmark khi hover vào item
+    //     item.addEventListener('mouseenter', () => {
+    //         if (!item.classList.contains('bookmarked')) {
+    //             bookmarkIcon.style.opacity = '0.5'; // Hiển thị nhẹ khi chưa được bookmark
+    //         }
+    //     });
 
-        // Ẩn bookmark khi không hover và chưa được bookmark
-        item.addEventListener('mouseleave', () => {
-            if (!item.classList.contains('bookmarked')) {
-                bookmarkIcon.style.opacity = '0'; // Ẩn đi khi rời chuột
-            }
-        });
+    //     // Ẩn bookmark khi không hover và chưa được bookmark
+    //     item.addEventListener('mouseleave', () => {
+    //         if (!item.classList.contains('bookmarked')) {
+    //             bookmarkIcon.style.opacity = '0'; // Ẩn đi khi rời chuột
+    //         }
+    //     });
 
-        // Sự kiện khi bấm vào bookmark
-        bookmarkIcon.addEventListener('click', (e) => {
-            e.stopPropagation(); // Ngăn không cho sự kiện click ảnh hưởng đến item
-            // Nếu chưa được bookmark, thêm class 'bookmarked'
-            if (!item.classList.contains('bookmarked')) {
-                item.classList.add('bookmarked');
-                bookmarkIcon.style.opacity = '1'; // Hiển thị rõ sau khi bookmark
-            } else {
-                // Nếu đã bookmark, bấm lại để bỏ bookmark
-                item.classList.remove('bookmarked');
-                bookmarkIcon.style.opacity = '0.5'; // Làm mờ khi bỏ bookmark
-            }
-        });
-    });
+    //     // Sự kiện khi bấm vào bookmark
+    //     bookmarkIcon.addEventListener('click', (e) => {
+    //         e.stopPropagation(); // Ngăn không cho sự kiện click ảnh hưởng đến item
+    //         // Nếu chưa được bookmark, thêm class 'bookmarked'
+    //         if (!item.classList.contains('bookmarked')) {
+    //             item.classList.add('bookmarked');
+    //             bookmarkIcon.style.opacity = '1'; // Hiển thị rõ sau khi bookmark
+    //         } else {
+    //             // Nếu đã bookmark, bấm lại để bỏ bookmark
+    //             item.classList.remove('bookmarked');
+    //             bookmarkIcon.style.opacity = '0.5'; // Làm mờ khi bỏ bookmark
+    //         }
+    //     });
+    // });
 });
