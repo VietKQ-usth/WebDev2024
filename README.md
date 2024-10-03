@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: Tran Duc Huy
+* ID: BA12-085
+* Group ID: 09
+* Project Name: Video Streaming Platform

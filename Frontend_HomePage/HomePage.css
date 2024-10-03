@@ -38,11 +38,18 @@ body{
 .menu-container a{
     flex: 6;
     text-decoration: none;
+    color: white;
 }
 
 .menu-list{
     display: flex;
     list-style: none;
+}
+
+.light-mode .menu-container a{
+    flex: 6;
+    text-decoration: none;
+    color: black;
 }
 
 .menu-list-item {
@@ -142,6 +149,12 @@ body{
     color: white;
     font-size: 20px;
     margin-bottom: 40px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.left-menu-icon:hover{
+    color:red;
+    transform: rotate(360deg);
 }
 
 .container{
