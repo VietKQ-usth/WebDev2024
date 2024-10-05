@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Search Page</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <a href="home.html" class="logo">
+            <img src="../assets/images/logo-g12.svg" alt="Group Logo">
+         </a>
+
+         <div class="menu">
+            <ul>
+               <li><a href="#">Buy<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="house.html">House</a></li>
+                     <li><a href="flat.html">Flat</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Rent<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">House</a></li>
+                     <li><a href="#">Flat</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Sell</a></li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#">Help<i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="contact.html#faq">FAQ</a></li>
+               </ul>
+            </li>
+            <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+</header>
+
+<!-- header section ends -->
+
+<!-- search filter section starts  -->
+
+<section class="filters" style="padding-bottom: 0;">
+
+   <form action="" method="post">
+      <div id="close-filter"><i class="fas fa-times"></i></div>
+      <h3>filter your search</h3>
+         
+         <div class="flex">
+            <div class="box">
+               <p>Enter location</p>
+               <input type="text" name="location" required maxlength="50" placeholder="Enter city name" class="input">
+            </div>
+            <div class="box">
+               <p>Offer Type</p>
+               <select name="offer" class="input" required>
+                  <option value="sale">sale</option>
+                  <option value="rent">rent</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Property Type</p>
+               <select name="type" class="input" required>
+                  <option value="flat">flat</option>
+                  <option value="house">house</option>
+                  <option value="shop">shop</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>BHK Numbers <span>*</span></p>
+               <select name="bhk" class="input" required>
+                  <option value="1">1 BHK</option>
+                  <option value="2">2 BHK</option>
+                  <option value="3">3 BHK</option>
+                  <option value="4">4 BHK</option>
+                  <option value="5">5 BHK</option>
+                  <option value="6">6 BHK</option>
+                  <option value="7">7 BHK</option>
+                  <option value="8">8 BHK</option>
+                  <option value="9">9 BHK</option>
+               </select>
+            </div>
+            <div class="box">
+               <label for="minimum-budget">Minimum Budget <span>*</span></label>
+               <input type="number" id="minimum-budget" name="minimum" class="input" placeholder="Enter minimum budget" required>
+            </div>
+            <div class="box">
+               <label for="maximum-budget">Maximum Budget <span>*</span></label>
+               <input type="number" id="maximum-budget" name="maximum" class="input" placeholder="Enter maximum budget" required>
+            </div>
+         </div>
+         <input type="submit" value="search property" name="search" class="btn">
+   </form>
+
+</section>
+
+<!-- search filter section ends -->
+
+<div id="filter-btn" class="fas fa-filter"></div>
+
+<!-- listings section starts  -->
+
+<section class="listings">
+
+   <h1 class="heading">searched results</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>john deo</p>
+               <span>10-11-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>house</span><span>sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-1.webp" alt="">
+         </div>
+         <h3 class="name">modern flats and appartments</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam - 000084</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">view property</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>john deo</p>
+               <span>10-11-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>flat</span><span>sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-2.webp" alt="">
+         </div>
+         <h3 class="name">modern flats and appartments</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam - 000084</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">view property</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>john deo</p>
+               <span>10-11-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>flat</span><span>sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-3.jpg" alt="">
+         </div>
+         <h3 class="name">modern flats and appartments</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam - 000084</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">view property</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- listings section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="home.html"><span>Home</span></a>
+         <a href="about.html"><span>About</span></a>
+         <a href="contact.html"><span>Contact</span></a>
+         <a href="listings.html"><span>All Listings</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><i class="fas fa-phone"></i><span>123456789</span></a>
+         <a href="#"><i class="fas fa-phone"></i><span>1112223333</span></a>
+         <a href="#"><i class="fas fa-envelope"></i><span>abcde@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam - 000084</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; G12 Real Estate Listing Website</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="../assets/js/script.js"></script>
+
+<script>
+
+document.querySelector('#filter-btn').onclick = () =>{
+   document.querySelector('.filters').classList.add('active');
+}
+
+document.querySelector('#close-filter').onclick = () =>{
+   document.querySelector('.filters').classList.remove('active');
+}
+
+</script>
+
+</body>
+</html>
