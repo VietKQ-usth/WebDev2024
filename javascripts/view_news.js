@@ -11,7 +11,7 @@
 // list of news object
 const news1 = {
     id: 1,
-    coverImage: '../assets/news_img/market_hit.jpg',
+    coverImage: '/assets/news_img/market_hit.jpg',
     newsTitle: 'Breaking News: Market Hits Record High',
     newsDescription: 'The stock market reached an all-time high today with major indices showing significant gains.',
     categories: ['Finance', 'Economy'],
@@ -21,7 +21,7 @@ const news1 = {
 
 const news2 = {
     id: 2,
-    coverImage: '../assets/news_img/tech_innovation.jpg',
+    coverImage: '/assets/news_img/tech_innovation.jpg',
     newsTitle: 'New Tech Innovations Announced at Conference',
     newsDescription: 'Several new technology products were unveiled at the annual tech conference today.',
     categories: ['Technology', 'Innovation'],
@@ -31,7 +31,7 @@ const news2 = {
 
 const news3 = {
     id: 3,
-    coverImage: '../assets/news_img/support_win.jpg',
+    coverImage: '/assets/news_img/support_win.jpg',
     newsTitle: 'Local Sports Team Wins Championship',
     newsDescription: 'The local sports team clinched the championship in a thrilling final match.',
     categories: ['Sports', 'Local News'],
@@ -41,7 +41,7 @@ const news3 = {
 
 const news4 = {
     id: 4,
-    coverImage: '../assets/news_img/tect_industry.jpg',
+    coverImage: '/assets/news_img/tect_industry.jpg',
     newsTitle: 'New Tech Innovation Revolutionizes Industry',
     newsDescription: 'A groundbreaking innovation in technology is set to revolutionize the industry.',
     categories: ['Technology', 'Business'],
@@ -51,7 +51,7 @@ const news4 = {
 
 const news5 = {
     id: 5,
-    coverImage: '../assets/news_img/city_council.jpg',
+    coverImage: '/assets/news_img/city_council.jpg',
     newsTitle: 'City Council Approves New Park Development',
     newsDescription: 'The city council has approved the development of a new park in the downtown area.',
     categories: ['Local News', 'Community'],
@@ -61,7 +61,7 @@ const news5 = {
 
 const news6 = {
     id: 6,
-    coverImage: '../assets/news_img/health_official.jpg',
+    coverImage: '/assets/news_img/health_official.jpg',
     newsTitle: 'Health Officials Announce Vaccination Drive',
     newsDescription: 'Health officials have announced a new vaccination drive to curb the spread of the virus.',
     categories: ['Health', 'Local News'],
@@ -71,7 +71,7 @@ const news6 = {
 
 const news7 = {
     id: 7,
-    coverImage: '../assets/news_img/robotics.jpg',
+    coverImage: '/assets/news_img/robotics.jpg',
     newsTitle: 'Local School Wins Robotics Competition',
     newsDescription: 'A local school has won a national robotics competition, showcasing their innovation and skill.',
     categories: ['Education', 'Local News'],
@@ -81,7 +81,7 @@ const news7 = {
 
 const news8 = {
     id: 8,
-    coverImage: '../assets/news_img/restaurant_downtown.jpg',
+    coverImage: '/assets/news_img/restaurant_downtown.jpg',
     newsTitle: 'New Restaurant Opens Downtown',
     newsDescription: 'A new restaurant featuring international cuisine has opened in the downtown area.',
     categories: ['Food', 'Local News'],
@@ -91,7 +91,7 @@ const news8 = {
 
 const news9 = {
     id: 9,
-    coverImage: '../assets/news_img/environment_group.jpg',
+    coverImage: '/assets/news_img/environment_group.jpg',
     newsTitle: 'Environmental Group Hosts Cleanup Event',
     newsDescription: 'An environmental group is hosting a community cleanup event to promote sustainability.',
     categories: ['Environment', 'Local News'],
@@ -119,6 +119,8 @@ let newsDescription = document.getElementById('news-description');
 
 function openEditBox(news){
     editBox.classList.add('open-box');
+    let box_container = document.querySelector('.box-container');
+    box_container.style.visibility = 'visible';
     // add details
     cover_img.src = news.coverImage;
     newsTitle.value += news.newsTitle;
@@ -126,6 +128,7 @@ function openEditBox(news){
     categories.value += news.categories;
     author.value += news.author;
     published_date.value += news.publishedDate;
+    //
 
 }
 
@@ -133,6 +136,8 @@ function openEditBox(news){
 let deleteBox = document.getElementById('delete-box');
 function openDeleteBox(){
     deleteBox.classList.add('open-box');
+    let box_container = document.querySelector('.box-container');
+    box_container.style.visibility = 'visible';
 }
 // find table
 let table = document.getElementById('body');
@@ -147,9 +152,16 @@ function onEditButtonClose(){
     categories.value = null;
     author.value = null;
     published_date.value = null;
+    //
+    let box_container = document.querySelector('.box-container');
+    box_container.style.visibility = 'hidden';
 }
+const delTitle = document.createElement('h4');
 function onDeleteButtonClose(){
     deleteBox.classList.remove('open-box');
+    let box_container = document.querySelector('.box-container');
+    box_container.style.visibility = 'hidden';
+    delTitle.innerText = null;
 }
 
 for(let i = 0; i < newsList.length; i++){
@@ -206,7 +218,6 @@ for(let i = 0; i < newsList.length; i++){
     deleteButton.id = 'delete_button';
     deleteButton.onclick = function() {
         let del_confirm_mess = document.getElementById('del-confirm-mess');
-        const delTitle = document.createElement('h4');
         delTitle.innerHTML = newsList[i].newsTitle;
         del_confirm_mess.appendChild(delTitle);
         openDeleteBox();
@@ -219,6 +230,21 @@ for(let i = 0; i < newsList.length; i++){
     // Append the div to the cell
     cell7.appendChild(buttonsDiv);
 }
+
+// remove pop-up window when click
+// window.addEventListener(
+//     "click",
+//     function (event) {
+//         console.log(event);
+//         if (event.target.classList.contains("edit-box")) {
+//             editBox.classList.remove(
+//                 "open-box"
+//             );
+//         } else if(isDeleteBoxOpen) {
+//             deleteBox.classList.remove("open-box");
+//         }
+//     }
+// );
 
 // Define the initial sort direction of each column
 let sortDirection = {newsId:"asc", published_date:"asc"};
