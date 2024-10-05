@@ -17,7 +17,7 @@ main {
     background: white;
     border-radius: 20px;
     width: 50%;
-    height: 650px;
+    height: 70%;
     position: absolute;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     overflow: hidden;
