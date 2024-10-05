@@ -1,0 +1,103 @@
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+        <!-- CSS Styles -->
+        <link rel='stylesheet' href="../css/side_bar.css">
+        <title>Hello, cc!</title>
+    </head>
+    <body>
+
+        <div class="sidebar ">
+            <div class="logo-details">
+                <i class='bx bxs-news'></i>
+                <span class="logo-name">USTH News</span>
+            </div>
+            <ul class="nav-links">
+                <nav>
+                    <li>
+                        <a href="side_bar.html">
+                            <i class='bx bxs-dashboard'></i>
+                            <span class="link_name">DashBoard</span>
+                        </a>
+                        <ul class="sub-links">
+                            <li class="link_name">DashBoard<a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="html1.html">
+                            <i class='bx bx-book-reader'></i>
+                            <span class="link_name">Books</span>
+                        </a>
+                        <ul class="sub-links">
+                            <li class="link_name">Books<a href="#"></a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="ionc-links">
+                            <a href="#">
+                                <i class='bx bx-book-reader'></i>
+                                <span class="link_name">Holder_expand</span>
+                            </a>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <ul class="sub-links">
+                            <li class="link_name">Holder_expand<a
+                                    href="#"></a></li>
+                            <li><a href="#">Holder 1</a></li>
+                            <li><a href="#">Holder 2</a></li>
+                            <li><a href="#">Holder</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-book-reader'></i>
+                            <span class="link_name">Holder</span>
+                        </a>
+                        <ul class="sub-links">
+                            <li class="link_name">Holder<a href="#"></a></li>
+                        </ul>
+                    </li>
+                </nav>
+            </ul>
+        </div>
+        <section class="home-section">
+            <div class="home-content">
+                <i class='bx bx-menu'></i>
+            </div>
+
+
+
+            
+            <!-- dddddddddaaaaaaaaayyyyyyyyyyyy -->
+
+
+
+
+
+
+            <h1 class="page-header">eeeeee</h1>
+        </section>
+        <script>
+            let expand_btns = document.querySelectorAll(".bx-chevron-down");
+            expand_btns.forEach(btn => {
+                btn.addEventListener("click", (e) => {
+                    let parentLi = e.target.closest('li');
+                    parentLi.classList.toggle("showMenu");
+                });
+            });
+
+
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+</script>
+    </body>
+</html>
