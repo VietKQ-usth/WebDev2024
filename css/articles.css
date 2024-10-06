@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0 70px;
+    box-sizing: border-box;
+    flex: 1;
+    color: black;
+}
+
+main div {
+    margin-bottom: 20px;
+}
+
+.author {
+    display: flex;
+    color: rgb(80, 80, 80);
+}
+.author p {
+    margin-right: 10px;
+}
+
+.author .author-name {
+    font-weight: 600;
+    color: black;
+}
+
+.sort-description, .content p {
+    text-align: justify;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+.content {
+    justify-content: center;
+}
+
+main img {
+    width: 100%;
+}
