@@ -5,7 +5,7 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(../src/images/login_background.jpg) no-repeat;
+    background: url(../assets/images/login_background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     flex: 1;
