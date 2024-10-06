@@ -102,6 +102,78 @@ const news9 = {
 
 // Array to hold the news objects
 const newsList = [news1, news2, news3, news4, news5, news6, news7, news8, news9];
+
+// Function to search news
+function searchNews() {
+    const searchTitle = document.getElementById('search-news').value.toLowerCase();
+    const searchCategory = document.getElementById('search-category').value.toLowerCase();
+
+    const filteredNews = newsList.filter(news => {
+        const titleMatch = news.newsTitle.toLowerCase().includes(searchTitle);
+        const categoryMatch = searchCategory === '' || news.categories.some(category => category.toLowerCase() === searchCategory);
+        return titleMatch && categoryMatch;
+    });
+
+    displayNews(filteredNews);
+}
+
+// Function to display news
+function displayNews(newsArray) {
+    const newsBody = document.getElementById('body');
+    newsBody.innerHTML = ''; // Clear the existing content before adding new
+
+    newsArray.forEach(news => {
+        const newsRow = document.createElement('tr');
+
+        newsRow.innerHTML = `
+            <td>${news.id}</td>
+            <td><img src="${news.coverImage}" alt="${news.newsTitle}" width="100" height="100"></td>
+            <td>${news.newsTitle}</td>
+            <td>${news.newsDescription}</td>
+            <td>${news.categories.join(', ')}</td>
+            <td>${news.author}</td>
+            <td>${news.publishedDate}</td>
+            <td></td>
+        `;
+
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.style.display = 'flex';
+        buttonsDiv.style.flexDirection = 'column';
+
+        const editButton = document.createElement('button');
+        editButton.className = 'modify_button';
+        editButton.id = 'edit_button';
+        const edit_icon = document.createElement('i');
+        edit_icon.className = 'fa-regular fa-pen-to-square';
+        edit_icon.id = 'edit-icon';
+        editButton.appendChild(document.createTextNode('Edit '));
+        editButton.appendChild(edit_icon);
+        editButton.onclick = function() {
+            openEditBox(news);
+        };
+
+        const deleteButton = document.createElement('button');
+        deleteButton.innerHTML = 'Delete <i class="fa-solid fa-trash"></i>';
+        deleteButton.className = 'modify_button';
+        deleteButton.id = 'delete_button';
+        deleteButton.onclick = function() {
+            let del_confirm_mess = document.getElementById('del-confirm-mess');
+            delTitle.innerHTML = news.newsTitle;
+            del_confirm_mess.appendChild(delTitle);
+            openDeleteBox();
+        };
+
+        buttonsDiv.appendChild(editButton);
+        buttonsDiv.appendChild(deleteButton);
+        newsRow.cells[7].appendChild(buttonsDiv);
+
+        newsBody.appendChild(newsRow);
+    });
+}
+
+// Initial display of all news
+displayNews(newsList);
+
 // edit modal box
 let editBox = document.getElementById('edit-box');
 // find news title
