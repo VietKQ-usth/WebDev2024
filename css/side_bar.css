@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
   }
+  body {
+ overflow: hidden; 
+}
   .sidebar{
     position: fixed;
     left: 0;
@@ -150,7 +153,7 @@ display: flex;
 font-size: 20px;
 }
 
-/* 
+
 .sidebar.close ~ .home-section{
     left: 40px;
     width: calc(100% - 40px);
@@ -198,4 +201,4 @@ font-size: 20px;
   }
   .sidebar.close{
     width: 40px;
-      } */
+      } 

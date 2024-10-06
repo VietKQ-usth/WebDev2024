@@ -6,7 +6,7 @@
             rel='stylesheet'>
 
         <!-- CSS Styles -->
-        <link rel='stylesheet' href="../css/side_bar.css">
+        <link rel='stylesheet' href="../../css/side_bar.css">
         <title>Hello, cc!</title>
     </head>
     <body>
@@ -20,7 +20,7 @@
                 <nav>
                     <li>
                         <!-- Your Link here -->
-                        <a href="side_bar.html">
+                        <a href="#">
                             <i class='bx bxs-dashboard'></i>
                             <span class="link_name">DashBoard</span>
                         </a>
@@ -30,7 +30,7 @@
                     </li>
                     <li>
                         <!-- Your Link here -->
-                        <a href="html1.html">
+                        <a href="#">
                             <i class='bx bx-book-reader'></i>
                             <span class="link_name">Books</span>
                         </a>
@@ -51,9 +51,10 @@
                         <ul class="sub-links">
                             <li class="link_name">Holder_expand<a
                                     href="#"></a></li>
-                            <li><a href="#">Holder 1</a></li>
-                            <li><a href="#">Holder 2</a></li>
-                            <li><a href="#">Holder</a></li>
+                            <li><a href="../ManageNews/addNews.html"
+                                    target="iframe_a">Add News</a></li>
+                            <li><a href="../ManageNews/view_news.html">View
+                                    News</a></li>
                         </ul>
                     </li>
                     <li>
@@ -70,12 +71,12 @@
         </div>
         <section class="home-section">
             <div class="home-content">
-                <!-- <i class='bx bx-menu'></i> -->
+                <i class='bx bx-menu'></i>
             </div>
 
-            <!-- dddddddddaaaaaaaaayyyyyyyyyyyy -->
+            <iframe src="../ManageNews/addNews.html" style="border:none" name="iframe_a"
+                height="100%" width="100%" title="Iframe Example"></iframe>
 
-            <h1 class="page-header">eeeeee</h1>
         </section>
         <script>
             let expand_btns = document.querySelectorAll(".bx-chevron-down");
