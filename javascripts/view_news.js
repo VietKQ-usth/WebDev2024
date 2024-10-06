@@ -128,7 +128,8 @@ function openEditBox(news){
     categories.value += news.categories;
     author.value += news.author;
     published_date.value += news.publishedDate;
-    //
+    // disable scroll
+    document.body.style.overflow = 'hidden';
 
 }
 
@@ -138,6 +139,8 @@ function openDeleteBox(){
     deleteBox.classList.add('open-box');
     let box_container = document.querySelector('.box-container');
     box_container.style.visibility = 'visible';
+    // disable scroll
+    document.body.style.overflow = 'hidden';
 }
 // find table
 let table = document.getElementById('body');
@@ -155,6 +158,8 @@ function onEditButtonClose(){
     //
     let box_container = document.querySelector('.box-container');
     box_container.style.visibility = 'hidden';
+    // enable scroll
+    document.body.style.overflow = 'visible';
 }
 const delTitle = document.createElement('h4');
 function onDeleteButtonClose(){
@@ -162,6 +167,8 @@ function onDeleteButtonClose(){
     let box_container = document.querySelector('.box-container');
     box_container.style.visibility = 'hidden';
     delTitle.innerText = null;
+    // enable scroll
+    document.body.style.overflow = 'visible';
 }
 
 for(let i = 0; i < newsList.length; i++){
