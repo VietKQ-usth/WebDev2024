@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House For Rent Listings</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <nav class="navbar">
+        <section class="flex">
+          <div id="menu-btn" class="fas fa-bars"></div>
+
+          <a href="home.html" class="logo">
+            <img src="../assets/images/logo-g12.svg" alt="Group Logo" />
+          </a>
+
+          <form class="search-bar" action="search_results.html" method="get">
+            <input
+              type="text"
+              name="query"
+              placeholder="Search for listings..."
+              required
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">Buy<i class="fas fa-angle-down"></i></a>
+                <ul>
+                  <li><a href="house.html">House</a></li>
+                  <li><a href="flat.html">Flat</a></li>
+                  <li><a href="listings_buy.html">All Listings</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Rent<i class="fas fa-angle-down"></i></a>
+                <ul>
+                  <li><a href="house_rent.html">House</a></li>
+                  <li><a href="flat_rent.html">Flat</a></li>
+                  <li><a href="listings_rent.html">All Listings</a></li>
+                </ul>
+              </li>
+              <li><a href="sell.html">Sell</a></li>
+            </ul>
+          </div>
+
+          <ul>
+            <li><a href="saved.html">Saved Property</a></li>
+            <li>
+              <a href="#">Help<i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Account <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <section class="listings">
+      <h1 class="heading">House list</h1>
+
+      <div class="box-container">
+        <!-- listing of houses starts -->
+        <!-- house 1 -->
+        <div class="box">
+          <div class="admin">
+            <h3>H</h3>
+            <div>
+              <p>Nguyen Bich Hanh</p>
+              <span>20-08-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-1.webp" alt="" />
+          </div>
+          <h3 class="name">House with lake view & rooftop</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>4</span></p>
+            <p><i class="fas fa-bath"></i><span>3</span></p>
+            <p><i class="fas fa-maximize"></i><span>100m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 2 -->
+        <div class="box">
+          <div class="admin">
+            <h3>T</h3>
+            <div>
+              <p>Vu Khanh Toan</p>
+              <span>01-09-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-2.webp" alt="" />
+          </div>
+          <h3 class="name">House with big terrace</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Quang Ninh, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>120m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 3 -->
+        <div class="box">
+          <div class="admin">
+            <h3>Q</h3>
+            <div>
+              <p>Nguyen Dang Quang</p>
+              <span>13-01-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-3.webp" alt="" />
+          </div>
+          <h3 class="name">New house for rent with 3 bedrooms</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Ninh Thuan, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>150m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 4 -->
+        <div class="box">
+          <div class="admin">
+            <h3>N</h3>
+            <div>
+              <p>Pham Van Nhuan</p>
+              <span>05-06-2023</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-4.webp" alt="" />
+          </div>
+          <h3 class="name">4 bedroom house for rent with nice rooftop</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Da Nang, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>100m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 5 -->
+        <div class="box">
+          <div class="admin">
+            <h3>H</h3>
+            <div>
+              <p>Nguyen Tuan Hung</p>
+              <span>09-09-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-5.webp" alt="" />
+          </div>
+          <h3 class="name">Affordable 4-Bedroom House for Rent</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Nha Trang, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>80m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 6 -->
+        <div class="box">
+          <div class="admin">
+            <h3>T</h3>
+            <div>
+              <p>Pham Duc Thuan</p>
+              <span>14-05-2023</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-6.webp" alt="" />
+          </div>
+          <h3 class="name">Charming house with front yard</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Vung Tau, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>80m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 7 -->
+        <div class="box">
+          <div class="admin">
+            <h3>D</h3>
+            <div>
+              <p>Nguyen Que Dong</p>
+              <span>22-01-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-7.webp" alt="" />
+          </div>
+          <h3 class="name">Spacious corner house with two street frontages</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Ben Tre, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>100m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 8 -->
+        <div class="box">
+          <div class="admin">
+            <h3>L</h3>
+            <div>
+              <p>Nguyen My Linh</p>
+              <span>18-10-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>5</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-8.webp" alt="" />
+          </div>
+          <h3 class="name">Tall house with a large garden</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Cao Bang, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>80m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- house 9 -->
+        <div class="box">
+          <div class="admin">
+            <h3>C</h3>
+            <div>
+              <p>Pham Linh Chi</p>
+              <span>30-01-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-9.webp" alt="" />
+          </div>
+          <h3 class="name">House with a view of Tay Ho lake</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Ha Noi, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>100m2</span></p>
+          </div>
+          <a href="view_house_rent.html" class="btn">View property</a>
+        </div>
+        <!-- listing of houses ends -->
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+      <section class="flex">
+        <div class="box">
+          <a href="home.html"><span>Home</span></a>
+          <a href="about.html"><span>About</span></a>
+          <a href="contact.html"><span>Contact</span></a>
+          <a href="all_listings.html"><span>All Listings</span></a>
+        </div>
+
+        <div class="box">
+          <a href="#"
+            ><i class="fas fa-phone"></i><span> +84-24 37 91 69 60</span></a
+          >
+          <a href="#"
+            ><i class="fas fa-envelope"></i
+            ><span> officeusth@usth.edu.vn</span></a
+          >
+          <a href="https://maps.app.goo.gl/4df2XkjSafFtBia3A"
+            ><i class="fas fa-map-marker-alt"></i
+            ><span>
+              18 Hoang Quoc Viet, Nghia Do, Cau Giay, Hanoi, Vietnam</span
+            ></a
+          >
+        </div>
+
+        <div class="box">
+          <a href="https://www.facebook.com/usth.edu.vn/"
+            ><i class="fab fa-facebook-f"></i><span> Facebook</span></a
+          >
+          <a href="https://x.com/usth_channel"
+            ><i class="fab fa-twitter"></i><span> Twitter</span></a
+          >
+          <a href="https://www.instagram.com/usth_official/"
+            ><i class="fab fa-instagram"></i><span> Instagram</span></a
+          >
+        </div>
+      </section>
+
+      <div class="credit">&copy; G12 Real Estate Listing Website</div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <nav class="navbar">
+        <section class="flex">
+          <div id="menu-btn" class="fas fa-bars"></div>
+
+          <a href="home.html" class="logo">
+            <img src="../assets/images/logo-g12.svg" alt="Group Logo" />
+          </a>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">Buy<i class="fas fa-angle-down"></i></a>
+                <ul>
+                  <li><a href="house.html">House</a></li>
+                  <li><a href="flat.html">Flat</a></li>
+                  <li><a href="listings_buy.html">All Listings</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Rent<i class="fas fa-angle-down"></i></a>
+                <ul>
+                  <li><a href="house_rent.html">House</a></li>
+                  <li><a href="flat_rent.html">Flat</a></li>
+                  <li><a href="listings_rent.html">All Listings</a></li>
+                </ul>
+              </li>
+              <li><a href="sell.html">Sell</a></li>
+            </ul>
+          </div>
+
+          <ul>
+            <li><a href="saved.html">Saved Property</a></li>
+            <li>
+              <a href="#">Help<i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Account <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <div class="home">
+      <section class="center">
+        <form action="search.html" method="post">
+          <h3>find your perfect home</h3>
+          <div class="box">
+            <p>Enter location <span>*</span></p>
+            <input
+              type="text"
+              name="location"
+              required
+              maxlength="50"
+              placeholder="Enter city name"
+              class="input"
+            />
+          </div>
+          <div class="flex">
+            <div class="box">
+              <p>Property Type <span>*</span></p>
+              <select name="type" class="input" required>
+                <option value="flat">Flat</option>
+                <option value="house">House</option>
+              </select>
+            </div>
+            <div class="box">
+              <p>BHK Numbers <span>*</span></p>
+              <select name="bhk" class="input" required>
+                <option value="1">1 BHK</option>
+                <option value="2">2 BHK</option>
+                <option value="3">3 BHK</option>
+                <option value="4">4 BHK</option>
+                <option value="5">5 BHK</option>
+                <option value="6">6 BHK</option>
+                <option value="7">7 BHK</option>
+                <option value="8">8 BHK</option>
+                <option value="9">9 BHK</option>
+              </select>
+            </div>
+            <div class="box">
+              <label for="minimum-budget">Minimum Budget <span>*</span></label>
+              <input
+                type="number"
+                id="minimum-budget"
+                name="minimum"
+                class="input"
+                placeholder="Enter minimum budget"
+                required
+              />
+            </div>
+            <div class="box">
+              <label for="maximum-budget">Maximum Budget <span>*</span></label>
+              <input
+                type="number"
+                id="maximum-budget"
+                name="maximum"
+                class="input"
+                placeholder="Enter maximum budget"
+                required
+              />
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="search property"
+            name="search"
+            class="btn"
+          />
+        </form>
+      </section>
+    </div>
+
+    <!-- home section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services">
+      <h1 class="heading">our services</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="../assets/images/icon-1.png" alt="" />
+          <h3>buy house</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, incidunt.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="../assets/images/icon-2.png" alt="" />
+          <h3>rent house</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, incidunt.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="../assets/images/icon-3.png" alt="" />
+          <h3>sell house</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, incidunt.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="../assets/images/icon-4.png" alt="" />
+          <h3>flats and buildings</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, incidunt.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="../assets/images/icon-5.png" alt="" />
+          <h3>24/7 service</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Doloremque, incidunt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- listings section starts  -->
+
+    <section class="listings">
+      <h1 class="heading">Latest Listings</h1>
+
+      <div class="box-container">
+        <!-- house 1 -->
+        <div class="box">
+          <div class="admin">
+            <h3>H</h3>
+            <div>
+              <p>Nguyen Bich Hanh</p>
+              <span>20-08-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-1.webp" alt="" />
+          </div>
+          <h3 class="name">House with lake view & rooftop</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i><span>Hanoi, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>4</span></p>
+            <p><i class="fas fa-bath"></i><span>3</span></p>
+            <p><i class="fas fa-maximize"></i><span>100m2</span></p>
+          </div>
+          <a href="view_house_1.html" class="btn">View property</a>
+        </div>
+
+        <!-- house 2 -->
+        <div class="box">
+          <div class="admin">
+            <h3>T</h3>
+            <div>
+              <p>Vu Khanh Toan</p>
+              <span>01-09-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-2.webp" alt="" />
+          </div>
+          <h3 class="name">House with big terrace</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Quang Ninh, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>120m2</span></p>
+          </div>
+          <a href="view_house_2.html" class="btn">View property</a>
+        </div>
+
+        <!-- house 3 -->
+        <div class="box">
+          <div class="admin">
+            <h3>Q</h3>
+            <div>
+              <p>Nguyen Dang Quang</p>
+              <span>13-01-2024</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-3.webp" alt="" />
+          </div>
+          <h3 class="name">New house for rent with 3 bedrooms</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Ninh Thuan, Vietnam</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>150m2</span></p>
+          </div>
+          <a href="view_house_3.html" class="btn">View property</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem; text-align: center">
+        <a href="all_listings.html" class="inline-btn">view all</a>
+      </div>
+    </section>
+
+    <!-- listings section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="reviews">
+      <h1 class="heading">client's reviews</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="user">
+            <img src="../assets/images/pic-1.png" alt="" />
+            <div>
+              <h3>John Doe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            voluptates delectus distinctio quam sequi error eum suscipit tempore
+            inventore ex!
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="user">
+            <img src="../assets/images/pic-2.png" alt="" />
+            <div>
+              <h3>John Doe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            voluptates delectus distinctio quam sequi error eum suscipit tempore
+            inventore ex!
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="user">
+            <img src="../assets/images/pic-3.png" alt="" />
+            <div>
+              <h3>John Doe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            voluptates delectus distinctio quam sequi error eum suscipit tempore
+            inventore ex!
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="user">
+            <img src="../assets/images/pic-4.png" alt="" />
+            <div>
+              <h3>John Doe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            voluptates delectus distinctio quam sequi error eum suscipit tempore
+            inventore ex!
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="user">
+            <img src="../assets/images/pic-5.png" alt="" />
+            <div>
+              <h3>John Doe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            voluptates delectus distinctio quam sequi error eum suscipit tempore
+            inventore ex!
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="user">
+            <img src="../assets/images/pic-6.png" alt="" />
+            <div>
+              <h3>John Doe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+            voluptates delectus distinctio quam sequi error eum suscipit tempore
+            inventore ex!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <footer class="footer">
+      <section class="flex">
+        <div class="box">
+          <a href="home.html"><span>Home</span></a>
+          <a href="about.html"><span>About</span></a>
+          <a href="contact.html"><span>Contact</span></a>
+          <a href="all_listings.html"><span>All Listings</span></a>
+        </div>
+
+        <div class="box">
+          <a href="#"
+            ><i class="fas fa-phone"></i><span> +84-24 37 91 69 60</span></a
+          >
+          <a href="#"
+            ><i class="fas fa-envelope"></i
+            ><span> officeusth@usth.edu.vn</span></a
+          >
+          <a href="https://maps.app.goo.gl/4df2XkjSafFtBia3A"
+            ><i class="fas fa-map-marker-alt"></i
+            ><span>
+              18 Hoang Quoc Viet, Nghia Do, Cau Giay, Hanoi, Vietnam</span
+            ></a
+          >
+        </div>
+
+        <div class="box">
+          <a href="https://www.facebook.com/usth.edu.vn/"
+            ><i class="fab fa-facebook-f"></i><span> Facebook</span></a
+          >
+          <a href="https://x.com/usth_channel"
+            ><i class="fab fa-twitter"></i><span> Twitter</span></a
+          >
+          <a href="https://www.instagram.com/usth_official/"
+            ><i class="fab fa-instagram"></i><span> Instagram</span></a
+          >
+        </div>
+      </section>
+
+      <div class="credit">&copy; G12 Real Estate Listing Website</div>
+    </footer>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

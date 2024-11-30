@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <nav class="navbar">
+        <section class="flex">
+          <div id="menu-btn" class="fas fa-bars"></div>
+
+          <a href="home.html" class="logo">
+            <img src="../assets/images/logo-g12.svg" alt="Group Logo" />
+          </a>
+
+          <form class="search-bar" action="search_results.html" method="get">
+            <input
+              type="text"
+              name="query"
+              placeholder="Search for listings..."
+              required
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">Buy<i class="fas fa-angle-down"></i></a>
+                <ul>
+                  <li><a href="house.html">House</a></li>
+                  <li><a href="flat.html">Flat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Rent<i class="fas fa-angle-down"></i></a>
+                <ul>
+                  <li><a href="house.html">House</a></li>
+                  <li><a href="flat.html">Flat</a></li>
+                </ul>
+              </li>
+              <li><a href="sell.html">Sell</a></li>
+            </ul>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">Help<i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html#faq">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Account <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <section class="listings">
+      <h1 class="heading">Search Results for: "<span id="query"></span>"</h1>
+
+      <div class="box-container">
+        <!-- listing of houses starts -->
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>House</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-1.webp" alt="" />
+          </div>
+          <h3 class="name">Modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_1.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-2.webp" alt="" />
+          </div>
+          <h3 class="name">Modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_2.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-3.webp" alt="" />
+          </div>
+          <h3 class="name">Modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_3.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-4.webp" alt="" />
+          </div>
+          <h3 class="name">Modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_4.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-5.webp" alt="" />
+          </div>
+          <h3 class="name">Modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_5.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-6.webp" alt="" />
+          </div>
+          <h3 class="name">modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_6.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-7.webp" alt="" />
+          </div>
+          <h3 class="name">modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_7.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>5</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-8.webp" alt="" />
+          </div>
+          <h3 class="name">modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_8.html" class="btn">View property</a>
+        </div>
+
+        <div class="box">
+          <div class="admin">
+            <h3>j</h3>
+            <div>
+              <p>John Doe</p>
+              <span>MM-DD-YYYY</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <p class="total-images">
+              <i class="far fa-image"></i><span>4</span>
+            </p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+              <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="../assets/images/house-img-9.webp" alt="" />
+          </div>
+          <h3 class="name">modern flats and apartments</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt"></i
+            ><span>Hanoi, Vietnam - 000084</span>
+          </p>
+          <p class="price">
+            <i class="fas fa-money-check"></i><span>Offer Price: X VND</span>
+          </p>
+          <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+          </div>
+          <a href="view_house_9.html" class="btn">View property</a>
+        </div>
+        <!-- listing of houses ends -->
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <section class="flex">
+        <div class="box">
+          <a href="home.html"><span>Home</span></a>
+          <a href="about.html"><span>About</span></a>
+          <a href="contact.html"><span>Contact</span></a>
+          <a href="listings.html"><span>All Listings</span></a>
+        </div>
+        <div class="box">
+          <a href="#"><i class="fas fa-phone"></i><span>123456789</span></a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i><span>abcde@gmail.com</span></a
+          >
+        </div>
+      </section>
+      <div class="credit">&copy; G12 Real Estate Listing Website</div>
+    </footer>
+
+    <!-- custom js file link  -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

@@ -9,8 +9,7 @@ Students are expected to:
 
 Student Info
 =======================
-
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: Nguyen Tuan Khiem
+* ID: BI12-210
+* Group ID: 12
+* Project Name: Real Estate Listings Website
